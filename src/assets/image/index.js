@@ -29,9 +29,19 @@ const imgs = {
   room3: require("../image/room3.jpg"),
   room4: require("../image/room4.jpg"),
   about_bg: require("../image/about_bg.jpg"),
+
 //   c4: require("../image//c4.jpg"),
 //   c4: require("../image/blog/c4.jpg"),
 //   c4: require("../image/blog/c4.jpg"),
+
+instagram1: require("../image/instagram/Image-01.jpg"),
+instagram2: require("../image/instagram/Image-02.jpg"),
+instagram3: require("../image/instagram/Image-03.jpg"),
+instagram4: require("../image/instagram/Image-04.jpg"),
+instagram5: require("../image/instagram/Image-05.jpg"),
+instagram6: require("../image/instagram/Image-06.jpg"),
+instagram7: require("../image/instagram/Image-07.jpg"),
+instagram8: require("../image/instagram/Image-08.jpg"),
 
 };
 export default imgs;

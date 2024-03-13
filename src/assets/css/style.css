@@ -3568,7 +3568,8 @@ h6 {
 }
 
 .single-footer-widget .input-group {
-  display: block !important;
+  display: flex !important;
+  flex:3;
 }
 
 .single-footer-widget input {
@@ -3657,6 +3658,10 @@ h6 {
 
 .footer-bottom .footer-social a:hover {
   color: #f3c300;
+}
+.footer_col{
+  flex: 0 0 auto;
+    width: 52.333333%;
 }
 
 /*---------------------------------------------------- */
