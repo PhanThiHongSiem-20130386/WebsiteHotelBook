@@ -7,7 +7,7 @@ export default function Input({ placeholder, icon, type,  title }) {
       <div className="input-group date d-flex" id="datetimepicker11">
         <input
           type={type}
-         
+         className="form-control"
           placeholder={placeholder}
          
         />

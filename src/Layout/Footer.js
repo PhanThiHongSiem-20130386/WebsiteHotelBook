@@ -21,30 +21,30 @@ export default function Footer() {
 
     return (
         <div className="footer">
-            <footer class="footer-area section_gap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3  col-md-6 col-sm-6">
-                            <div class="single-footer-widget">
-                                <h6 class="footer_title">LUXURIOUS  HOTEL</h6>
+            <footer className="footer-area section_gap">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-3  col-md-6 col-sm-6">
+                            <div className="single-footer-widget">
+                                <h6 className="footer_title">LUXURIOUS  HOTEL</h6>
                                 <p>
                                     Có hồ bơi ngoài trời, trung tâm thể dục, khu vườn và sân hiên ở TP. Hồ Chí Minh. Chỗ nghỉ này có các tiện nghi như nhà hàng và quầy bar. Chỗ nghỉ cung cấp lễ tân 24/24, dịch vụ đưa đón sân bay, dịch vụ phòng và Wi-Fi miễn phí ở toàn bộ chỗ nghỉ.
                                 </p>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="single-footer-widget">
-                                <h6 class="footer_title">Thành viên nhóm</h6>
-                                <div class="row">
-                                    <div class="footer_col">
-                                        <ul class="list_style">
+                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="single-footer-widget">
+                                <h6 className="footer_title">Thành viên nhóm</h6>
+                                <div className="row">
+                                    <div className="footer_col">
+                                        <ul className="list_style">
                                             <li><a href="#">Phan Thị Hồng Siêm  </a></li>
                                             <li><a href="#">Châu Quế Bình</a></li>
 
                                         </ul>
                                     </div>
-                                    <div class="col-4">
-                                        <ul class="list_style">
+                                    <div className="col-4">
+                                        <ul className="list_style">
                                             <li><a href="#">20130386</a></li>
                                             <li><a href="#">20130204</a></li>
 
@@ -53,26 +53,26 @@ export default function Footer() {
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="single-footer-widget">
-                                <h6 class="footer_title">Bản tin</h6>
+                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="single-footer-widget">
+                                <h6 className="footer_title">Bản tin</h6>
                                 <p>Hãy gửi mail dưới đây để nhận thông tin mới </p>
                                 <div id="mc_embed_signup">
-                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
-                                        <div class="input-group  d-flex">
+                                    <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" className="subscribe_form relative">
+                                        <div className="input-group  d-flex">
 
                                             <Input placeholder="Địa chỉ email" />
                                             <Button icon send />
                                         </div>
-                                        <div class="mt-10 info"></div>
+                                        <div className="mt-10 info"></div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6">
-                            <div class="single-footer-widget instafeed">
-                                <h6 class="footer_title">Dòng thông tin</h6>
-                                <ul class="list_style instafeed d-flex flex-wrap">
+                        <div className="col-lg-3 col-md-6 col-sm-6">
+                            <div className="single-footer-widget instafeed">
+                                <h6 className="footer_title">Dòng thông tin</h6>
+                                <ul className="list_style instafeed d-flex flex-wrap">
                                     {Ins.map((instegram, index) =>
                                         <li key={index}><img src={instegram.img} alt="" /></li>
                                     )}
@@ -82,10 +82,10 @@ export default function Footer() {
                             </div>
                         </div>
                     </div>
-                    <div class="border_line"></div>
-                    <div class="row footer-bottom d-flex justify-content-between align-items-center">
-                        <p class="col-lg-8 col-sm-12 footer-text m-0">
-                            Được phát triển bởi &copy;<script>document.write(new Date().getFullYear());</script> NHÓM <i class="fa fa-heart-o" aria-hidden="true"></i> 
+                    <div className="border_line"></div>
+                    <div className="row footer-bottom d-flex justify-content-between align-items-center">
+                        <p className="col-lg-8 col-sm-12 footer-text m-0">
+                            Được phát triển bởi &copy;<script>document.write(new Date().getFullYear());</script> NHÓM <i className="fa fa-heart-o" aria-hidden="true"></i> 
                         </p>
                     </div>
                     </div>
