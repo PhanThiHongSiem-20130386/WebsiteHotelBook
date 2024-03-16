@@ -153,6 +153,10 @@ export default function HistoryBook() {
             </Table>
             <ModalDetail
               show={modalShow}
+              bookDetail={true}
+              btnClose
+              header="Chi tiết thông tin đặt phòng"
+              title="Thông tin đặt phòng"
               onHide={() => setModalShow(false)}
             />
           </div>
