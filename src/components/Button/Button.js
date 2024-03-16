@@ -4,15 +4,13 @@ import "./button.css";
 
 export default function Button({ title, className, style,icon,send, onClick }) {
   return (
-    <a
+    <button
       className={`book_now_btn button_hover btn_now ${className} ${send && "classbutton"} `} 
       style={style} 
-      href="./index"
-     
       onClick={onClick} 
     >
      {title}
      <span className={`${icon && "lnr lnr-location"}`}></span>
-    </a>
+    </button>
   );
 }

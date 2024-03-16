@@ -2,8 +2,11 @@ import React from "react";
 import "../assets/css/profile.css";
 import Button from "../components/Button/Button";
 import Input from "../components/Input/Input";
+import ModalDetail from "../Layout/ModalDetail";
 
 export default function ProfileInfo() {
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <div className="rounded bg-white mb-5">
       <div className="row">
@@ -17,7 +20,15 @@ export default function ProfileInfo() {
             <span className="font-weight-bold">Edogaru</span>
             <span className="text-black-50">edogaru@mail.com.my</span>
             <span> </span>
-            <Button title="Đổi mật khẩu"/>
+            <Button title="Đổi mật khẩu" onClick={() => setModalShow(true)}/>
+            <ModalDetail
+              show={modalShow}
+              changePass={true}
+              btnSave
+              header="Đổi mật khẩu"
+              title="Thay đổi mật khẩu"
+              onHide={() => setModalShow(false)}
+            />
           </div>
         </div>
         <div className="col-md-5 border-right">
