@@ -26,7 +26,7 @@ export default function Profile() {
   };
 
   return (
-    <div className="container">
+    <div className="container profile-container">
       <div className="row">
         <div className="col-md-3 sidebar">
           {/* <div>Tên</div>

@@ -26,7 +26,7 @@ export default function LikeRoom() {
       </div>
       <section className="accomodation_area">
         <div className="container">
-          <Room data={rooms} classNamediv="col-lg-4 col-sm-6"/>
+          <Room data={rooms} classNamediv="col-lg-4 col-sm-6" like/>
         </div>
       </section>
     </>
