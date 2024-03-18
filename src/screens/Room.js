@@ -10,6 +10,8 @@ import "../assets/css/style.css";
 import "../assets/css/style.css.map";
 import "../assets/css/responsive.css";
 import imgs from "../assets/image";
+import Input from "../components/Input/Input";
+import InputGroup from "../components/InputGroup";
 export default function Room() {
     return (
         <>
@@ -19,10 +21,10 @@ export default function Room() {
                 </div>
                 <div className="container">
                     <div className="page-cover text-center">
-                        <h2 className="page-cover-tittle">Accomodation</h2>
+                        <h2 className="page-cover-tittle">Phòng</h2>
                         <ol className="breadcrumb">
-                            <li><a href="index.html">Home</a></li>
-                            <li className="active">Accomodation</li>
+                            <li><a href="index.html">Trang chủ</a></li>
+                            <li className="active">Phòng</li>
                         </ol>
                     </div>
                 </div>
@@ -34,74 +36,83 @@ export default function Room() {
     <!--================ Accomodation Area  =================-->
     <!--================Booking Tabel Area =================--> */}
             <section className="hotel_booking_area">
-                <div className="container">
-                    <div className="row hotel_booking_table">
-                        <div className="col-md-3">
-                            <h2>Book
-                                {/* <br> */}
-                                Your Room</h2>
+            <div className="hotel_booking_area position">
+          <div className="container">
+            <div className="hotel_booking_table">
+              <div className="col-md-3">
+                <h2>
+                 Đặt 
+                  <br /> Phòng ngay
+                </h2>
+              </div>
+              <div className="col-md-9">
+                <div className="boking_table">
+                  <div className="row">
+                    <div className="col-md-4">
+                      <div className="book_tabel_item">
+                        <div className="form-group">
+                          <Input
+                            placeholder="Arrive"
+                            icon="fa fa-calendar"
+                            type="date"
+                            title={"Ngày nhận phòng"}
+                          />
                         </div>
-                        <div className="col-md-9">
-                            <div className="boking_table">
-                                <div className="row">
-                                    <div className="col-md-4">
-                                        <div className="book_tabel_item">
-                                            <div className="form-group">
-                                                <div className='input-group date' id='datetimepicker11'>
-                                                    <input type='text' className="form-control" placeholder="Arrival Date" />
-                                                    <span className="input-group-addon">
-                                                        <i className="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div className="form-group">
-                                                <div className='input-group date' id='datetimepicker1'>
-                                                    <input type='text' className="form-control" placeholder="Departure Date" />
-                                                    <span className="input-group-addon">
-                                                        <i className="fa fa-calendar" aria-hidden="true"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="book_tabel_item">
-                                            <div className="input-group">
-                                                <select className="wide">
-                                                    <option data-display="Adult">Adult</option>
-                                                    <option value="1">Old</option>
-                                                    <option value="2">Younger</option>
-                                                    <option value="3">Potato</option>
-                                                </select>
-                                            </div>
-                                            <div className="input-group">
-                                                <select className="wide">
-                                                    <option data-display="Child">Child</option>
-                                                    <option value="1">Child</option>
-                                                    <option value="2">Baby</option>
-                                                    <option value="3">Child</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="book_tabel_item">
-                                            <div className="input-group">
-                                                <select className="wide">
-                                                    <option data-display="Child">Number of Rooms</option>
-                                                    <option value="1">Room 01</option>
-                                                    <option value="2">Room 02</option>
-                                                    <option value="3">Room 03</option>
-                                                </select>
-                                            </div>
-                                            <a className="book_now_btn button_hover" href="#">Book Now</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div className="form-group">
+                          <Input
+                            placeholder="Departure Date"
+                            icon="fa fa-calendar"
+                            type="date"
+                            title={"Ngày trả phòng"}
+                          />
                         </div>
+                      </div>
                     </div>
+                    <div className="col-md-4">
+                      <div className="book_tabel_item">
+                        <div className="form-group">
+                          <InputGroup
+                            title="Loại phòng"
+                            label="Người lớn"
+                            options={[
+                              { value: 1, label: "Người lớn" },
+                              { value: 2, label: "Trẻ em" },
+                              { value: 3, label: "Trẻ sơ sinh" },
+                            ]}
+                          />
+                        </div>
+                        <div className="form-group form-option">
+                          <InputGroup
+                            title="Loại phòng"
+                            label="Trẻ em"
+                            options={[
+                              { value: 1, label: "Trẻ em" },
+                              { value: 2, label: "Em bé" },
+                              { value: 3, label: "Trẻ sơ sinh" },
+                            ]}
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="book_tabel_item">
+                        <InputGroup
+                          label="Số phòng"
+                          options={[
+                            { value: 1, label: "Phòng 01" },
+                            { value: 2, label: "Phòng 02" },
+                            { value: 3, label: "Phòng 03" },
+                          ]}
+                        />
+                        <Button title="Đặt ngay" />
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
             </section>
             {/* <!--================Booking Tabel Area  =================-->
     <!--================ Accomodation Area  =================-->
@@ -196,7 +207,7 @@ export default function Room() {
                                         <div className="position-relative">
                                             <img className="img-fluid" src="img/room-1.jpg" alt=""/>
                                                 <small
-                                                    className="position-absolute start-0 top-100 translate-middle-y bg-primary text-white rounded py-1 px-3 ms-4">$100/Night</small>
+                                                    className="position-absolute start-0 top-100 translate-middle-y bg-primary  text-white rounded py-1 px-3 ms-4">$100/Night</small>
                                         </div>
                                         <div className="p-4 mt-2">
                                             <div className="d-flex justify-content-between mb-3">
